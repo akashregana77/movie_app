@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-
-import { Home } from './home/home';
+import { RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector:'app-root',
   standalone: true,
-  imports: [Home],
-  templateUrl:'./app.html',
+  imports: [RouterOutlet],
+  templateUrl: './app.html',
   styles: `
     :host {
       color: rgb(0,0,0);
